@@ -3,9 +3,6 @@ from graph import Graph
 
 def load_europe() -> Graph:
     graph = Graph()
-    graph.new_edge("Lisbon", "Madrid", 339)
-    graph.new_edge("Naples", "Rome", 134)
-    graph.new_edge("Hamburg", "Copenhagen", 180)
     graph.new_edge("Hamburg", "Berlin", 182)
     graph.new_edge("Berlin", "Warsaw", 345)
     graph.new_edge("Amsterdam", "Hamburg", 338)
