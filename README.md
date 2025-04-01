@@ -1,3 +1,3 @@
-# Dijkstrův algoritmus
+# TSP
 
-Naprogramujte hledání nejkratší cesty.
+Ukázková implementace problému obchodního cestujícího. Bez optimalizací.
