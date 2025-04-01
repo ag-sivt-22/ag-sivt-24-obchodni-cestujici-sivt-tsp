@@ -30,7 +30,7 @@ class Graph:
         return self.cities[z_mesta].sousede
 
     def existuje_cesta(self, z_mesta, do_mesta) -> bool:
-        return do_mesta in self.cities[z_mesta].sousede
+        return do_mesta in [soused[0] for soused in self.cities[z_mesta].sousede]
 
 
 
@@ -49,7 +49,6 @@ reseni: list[Cesta] = []
 def vyzkousej_cesty(graph, dosud_projita_cesta):
     global reseni
     sousedi=graph.najdi_sousedy(dosud_projita_cesta.mesta[-1])    
-    print(f"dosud projita cesta: {dosud_projita_cesta}")
     for soused,vzdalenost in sousedi:
         if soused in dosud_projita_cesta.mesta:
             continue
