@@ -36,7 +36,6 @@ def load_europe() -> Graph:
     graph.new_edge("Madrid", "Genoa", 951)
     graph.new_edge("Madrid", "Paris", 805)
     graph.new_edge("Paris", "Brussels", 225)
+    # navice:
+    #graph.new_edge("Paris", "Bern", 400)
     return graph
-
-
-load_europe()
